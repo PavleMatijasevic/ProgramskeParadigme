@@ -5,14 +5,14 @@ def isPrime(n):
     brojac = 0
     while(i <= n):
         if(brojac > 2):
-            return False;
+            return False
         if(n % i == 0):
             brojac += 1
         i += 1
     if(brojac == 2):
-        return True;
+        return True
     else:
-        return False;
+        return False
     
 broj = int(input())
 
