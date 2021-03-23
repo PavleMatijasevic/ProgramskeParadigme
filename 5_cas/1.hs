@@ -1,0 +1,1 @@
+zdravo = putStrLn("Zdravo")
