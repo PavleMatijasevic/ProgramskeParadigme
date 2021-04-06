@@ -1,2 +1,2 @@
 parniN :: Int -> [Int]
-parniN a = [2, 4..a*2]
+parniN a = [0, 2..(a*2)-2]
