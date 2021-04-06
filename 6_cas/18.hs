@@ -5,4 +5,3 @@ bezbedanRep :: [Int] -> [Int]
 bezbedanRep lista
            | length lista == 0 = []
            | otherwise = tail(lista)
-           
