@@ -1,0 +1,272 @@
+
+• Značenje reči paradigma i programska paradigma.
+• Uloga programskih paradigmi.
+• Definicija programskog jezika.
+• Povezanost paradigmi i jezika.
+• Razvoj programskih jezika.
+  
+• Šta karakteriše proceduralnu paradigmu?
+• Šta karakteriše deklarativnu paradigmu?
+• Koje su osnovne četiri programske paradigme?
+• Nabroj bar četiri dodatne programske paradigme.
+
+• Koje su osnovne karakteristike imperativne paradigme?
+• Nabroj tri jezika koji pripadaju imperativnoj paradigmi.
+• Koje su osnovne karakteristike ... paradigme?
+• Nabroj tri jezika koji pripadaju ... paradigmi.
+
+• Šta je programska paradigma?
+• Koje su osnovne programske paradigme?
+• Šta je programski jezik?
+• Koji je odnos programskih jezika i programskih paradigmi?
+• Zašto su nastajale i nastaju nove programske paradigme?
+
+• Koje su osnovne karakteristike komponentne paradigme?
+• Nabroj tri jezika koji pripadaju (podržavaju) komponentnu paradigmu.
+• Koje su osnovne karakteristike ... paradigme?
+• Nabroj tri jezika koji pripadaju ... paradigmi.
+    
+    
+• Koji je formalni okvir funkcionalnog programiranja?
+• Koji se jezik smatra prvim funkcionalnim jezikom?
+• Koja je ekspresivnost lambda računa?
+• Koji su sve sinonimi za lambda izraz?
+• Navesti definiciju lambda terma.
+
+• Da li čist lambda račun uključuje konstante u definiciji?
+• Navesti primer jednog lambda izraza, objasniti njegovo značenje i prime-
+niti dati izraz na neku konkretnu vrednost.
+• Koja je asocijativnost primene a koja apstrakcije?
+
+• Navesti definiciju slobodne promenljive? Koje promenljive su vezane?
+• Коja je uloga pojma alfa ekvivalentnosti?
+• Šta su redukcije?
+• Šta je delta redukcija? Navesti primer.
+• Šta je alfa redukcija? Navesti primer.
+
+• Kada se koristi alfa redukcija?
+• Šta je beta redukcija? Navesti primer.
+• Definisati supstituciju.
+• Navesti primer lambda izraza koji definiše funkciju višeg reda koja prima
+funkciju kao argument.
+• Navesti primer lambda izraza koji definiše funkciju višeg reda koja ima
+funkciju kao povratnu vrednost.
+
+• Čemu služi Karije postupak?
+• Kako se definišu funkcije sa više argumenata?
+• Šta je normalni oblik funkcije?
+• Da li svi izrazi imaju svoj normalni oblik?
+• Navesti svojstvo konfluentnosti.
+
+
+• Da li izraz može imati više normalnih obilika?
+• Koja je razlika izmedu aplikativnog i normalnog poretka?
+• Šta govori teorema standardizacije?
+• Šta se dobija lenjom evaluacijom?
+• Koje su osnovne karakteristike Haskela?
+• Šta izračunava naredni Haskel program ...
+
+
+• Šta je konkurentna paradigma?
+• Da li su ideje o konkurentnosti nove? Zbog čega je konkurentnost važna?
+• Koji su osnovni nivoi konkurentnosti?
+• Koje su vrste konkurentnosti u odnosu na hardver? Kako se to odnosi na
+programere i dizajn programskog jezika?
+• Šta je osnovni cilj koji želimo da ostvarimo razvijanjem konkurentnih algoritama?
+
+
+• Koji su osnovni razlozi za korišćenje konkurentnog programiranja?
+• Navesti primer upotrebe konkurentnog programiranja za podršku logičkoj
+strukturi programa.
+• Da li je dobijanje na brzini moguće ostvariti i na jednoprocesorskoj mašini?
+• Koji je hijerarhijski odnos u okviru konkurentne paradigme?
+• Šta je zadatak? Na koji način se zadatak razlikuje od potprograma?
+
+• Koje su osnovne kategorije zadataka i koje su karakteristike ovih katego-
+rija?
+• Šta je paralelizacija zadataka?
+• Šta je paralelizacija podataka?
+• Navesti primere paralelizacije zadataka i paralelizacije podataka.
+• Koji je odnos ovih paralelizacija?
+
+
+• Šta je komunikacija?
+• Koji su osnovni mehanizmi komunikacije?
+• Šta karakteriše slanje poruka u okviru iste mašine, a šta ukoliko je slanje
+poruka preko mreže?
+• Šta je sinhronizacija?
+• Kakva je sinhronizacija u okviru modela slanja poruka?
+• Kakva je sinhronizacija u okviru modela deljene memorije?
+• Koje su dve osnovne vrste sinhronizacije u okviru modela deljene memorije?
+
+• Objasniti sinhronizaciju saradnje.
+• Šta je uslov takmičenja?
+• Koji su načini implementiranja sinhronizacije?
+• Šta je koncept napredovanja?
+• Navesti primer uzajamnog blokiranja.
+• Navesti primer živog blokiranja.
+• Navesti primer individualnog izgladnjivanja.
+
+• Koje vrste uzajamnog isključivanja postoje?
+• Koji je odnos konkurentnosti i potprograma/klasa.
+• Opisati problem filozofa za večerom.
+• Semantika muteksa i katanaca.
+
+• Šta čini teorijske osnove logičkog programiranja?
+• Na koji način se rešavaju problemi u okviru logičke paradigme?
+• Koji su osnovni predstavnici logičke paradigme?
+• Za koju vrstu problema je pogodno koristiti logičko programiranje?
+• Za koju vrstu problema nije pogodno koristiti logičko programiranje?
+
+• Definisati logičke i nelogičke simbole logike prvog reda.
+• Definisati term logike prvog reda.
+• Definisati atomičku formulu logike prvog reda.
+• Šta je literal? Šta je klauza?
+• Definisati supstituciju za termove.
+• Definisati supstituciju za atomičke formule.
+
+• Šta je problem unifikacije?
+• Kada kažemo da su izrazi unifikabilni?
+• Da li za dva izraza uvek postoji unifikator?
+• Ukoliko za dva izraza postoji unifikator, da li on mora da bude jedinstven?
+• Šta je metod rezolucije?
+
+• Šta čini teorijske osnove logičkog programiranja?
+• Na koji način se rešavaju problemi u okviru logičke paradigme?
+• Koji su osnovni predstavnici logičke paradigme?
+• Za koju vrstu problema je pogodno koristiti logičko programiranje?
+• Za koju vrstu problema nije pogodno koristiti logičko programiranje?
+
+• Šta je Hornova klauza i čemu ona odgovara?
+• Šta je supstitucija?
+• Kada se dva terma mogu unifikovati?
+• Od čega se sastoji programiranje u Prologu?
+
+• Šta su činjenice, šta se pomoću njih opisuje?
+• Šta su pravila i šta se pomoću njih zadaje?
+• Šta odreduju činjenice i pravila?
+• Šta govori pretpostavka o zatvorenosti?
+• Šta su upiti i čemu oni služe?
+• Šta su termovi?
+
+• Kako se vrši unifikacija nad termima u Prologu?
+• Šta je lista?
+• Napisati pun i skraćen zapis liste od tri elementa a, b i c.
+• Šta omogućava metaprogramiranje?
+• Napisati deklarativno tumačenje naredne Prolog konstrukcije ...
+• Napisati proceduralno tumačenje naredne Prolog konstrukcije ...
+
+• Šta je stablo izvodenja i čemu ono odgovara u smislu deklarativne/proceduralne
+semantike?
+• Koji su osnovni elementi stabla izvodenja?
+• Nacrtati stablo izvodenja za naredni Prolog program ...
+• Na koji način redosled tvrdenja u bazi znanja utiče na pronalaženje rešenja u Prologu?
+
+
+• Koja je uloga operatora sečenja?
+• Nacrtati stablo izvodenja za naredni program bez operatora sečenja, i
+sličan program sa operatorom sečenja ...
+• Šta je crveni a šta zeleni operator sečenja?
+• Koja je uloga opreatora sečenja u narednom primeru ...
+• Da li se Hornovim klauzama mogu opisati sva tvrdenja logike prvog reda?
+• Šta Prolog ne može da dokaže?
+• Koje su osobine NOT operatora?
+
+• Da li Prolog može da obezbedi generisanje efikasnih algoritama?
+• Kakva je kompatibilnost izmedu različitih Prolog kompajlera?
+• Da li je Prolog Tjuring kompletan jezik?
+• Kakav je sistem tipova u prologu?
+
+• Šta je programiranje ograničenja?
+• Koji su predstavnici paradigme programiranja ograničenja?
+• Po čemu se razlikuje izraz x < y u imperativnoj paradigmi i paradigmi
+ograničenja?
+• Od čega se sastoji programiranje ograničenja nad konačnim domenom?
+• Napisati program u B-Prologu koji pronalazi sve vrednosti promenljivih
+X, Y i Z za koje važi da je X <= Y i X + Y <= Z pri čemu promenljive
+pripadaju narednim domenimaX ∈ {1, 2, ..., 50}, Y ∈ {5, 10, ..100} i Z ∈
+{1, 3, 5, ...99}
+
+• Pod kakvim uticajem je nastala imperativna paradigma?
+• Šta je stanje programa?
+• Koje su faze razvoja imperativne paradigme?
+• Koje su karakteristike operacione paradigme?
+
+• Koji je minimalni skup naredbi operaciona pardigme?
+• Koje su karakteristike strukturne paradigme?
+• Koji je minimalni skup naredbi strukturne pardigme?
+• Koje su karakteristike proceduralne paradigme?
+
+• Koje vrste prenosa parametara postoje?
+• Kako je u memoriji orgranizovano izvršavanje potprograma?
+• Šta su korutine?
+• Koje su karakteristike modularne paradigme?
+
+• Šta omogućava modularna paradigma?
+• Kako se rešavaju problemi u okviru proceduralne paradigme?
+• Šta su bočni efekti?
+• Do čega dovode bočni efekti?
+
+• Koji su principi funkcionalne dekompozicije i koji su osnovni problemi
+ovogo pristupa?
+• Šta je osnovni uzrok problema kod rešavanja funkcionalnom dekompozici-
+jom?
+• Zašto je uticaj izmena zahteva važan?
+• Šta je kohezija, a šta kopčanje i kako su povezani?
+• Šta je efekat talasanja i da li je on poželjan?
+• Koji su bili simptomi prve softverske krize?
+
+• Šta je apstrakcija?
+• Šta je interfejs?
+• Šta implementacija?
+• Objasniti odnos interfejsa i implementacije.
+• Šta je enkapsulacija?
+• Koji je odnos apstrakcije i enkapsulacije?
+
+
+• Šta je objekat? (filozofski? konceptulano? u objektnoj terminologiji?
+specifikacijski? implementaciono?)
+• Kako komuniciraju objekti?
+• Šta je klasa?
+• Koji je odnos klase i objekta?
+• Koji je prvi objektni jezik i kada je nastao?
+• Šta su objektno zasnovani, a šta objektno orijenitsani jezici?
+• Koji su najpopularniji objektno orijentisani jezici?
+
+• Šta je nasledivanje?
+• Na koje načine se koristi nasledivanje? Šta je proširivanje, a šta specijalizacija?
+• Šta omogućava nasledivanje?
+• Šta je višestruko nasledivanje?
+• Koji jezici omogućavaju višestruko nasledivanje, a koji ne?
+• Koje su osnovne vidljivosti koje klase definišu?
+
+• Šta je polimorfizam?
+• Koja je razlika izmedu preopterećivanja i predefinisanja?
+• Kada se koristi statičko a kada dinamičko vezivanje?
+• Šta definišu apstraktne klase?
+• Koje su mogućnosti generičkog programiranja?
+• Obrazložiti sličnosti i razlike strukturnog i OO programiranja?
+• Koje su osnovne prednosti OO programiranja u odnosu na strukturno
+programiranje?
+
+• Koja su osnovna svojstva programskih jezika?
+• Koji formalizam se koristi za opisivanje sintakse programskog jezika?
+• Šta definiše semantkika programskog jezika?
+• Koji su formalni okviri za definisanje semantike programskih jezika?
+• Šta je ime?
+• Šta je povezivanje?
+• Koja su moguća vremena povezivanja?
+
+• Šta je doseg?
+• Šta je kontrola toka?
+• Koji su mehanizmi odredivanja kontrole toka?
+• Šta je sistem tipova i šta on uključuje?
+• Šta je tipiziranje i kakvo tipiziranje postoji?
+• Kada se radi provera tipova?
+• Koja je razlika izmedu kompiliranja i interpretiranja?
+• Šta je rantajm sistem?
+
+
+
+
+
