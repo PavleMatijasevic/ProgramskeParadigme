@@ -1,23 +1,16 @@
-
 -- radi
 otvori:: [(String, Int)] -> String -> [(String, Int)]
 otvori b br = (br, 0) : b
 
-porediStringove :: (String, Int) -> String -> String
-porediStringove par zeljeni = (String)par.fst
-
-
---pronadjiUListi :: [(String, Int)] -> String -> [(String,Int)]
---pronadjiUListi lista zeljeni = [(x,y) | x <- lista.fst, y <- lista.snd, x /= zeljeni]
+-- radi
+zatvori :: [(String, Int)] -> String -> [(String, Int)]
+zatvori lista br  = filter ((br /=) . fst) lista
 
 
 
-{-
--- zatvori:: [(String, Int)] -> String -> [(String, Int)]
-zatvori b br 
-zatvori [] br = []
-zatvori (x:xs) br = x : (zatvori(b) xs)
--}
+uplati :: [(String, Int)] -> String -> Int -> [(String, Int)]
+uplati lista br iznos = map (+iznos) (filter ((==br) . fst) lista)
+
 
 -- na racun br iz liste b ulati iznos dinara
 --uplati:: [(String, Int)] -> String -> Int -> [(String, Int)]
