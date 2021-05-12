@@ -1,22 +1,18 @@
--- radi
+-- radi moj nacin
 otvori:: [(String, Int)] -> String -> [(String, Int)]
 otvori b br = (br, 0) : b
 
--- radi
+-- radi moj nacin
+{-
 zatvori :: [(String, Int)] -> String -> [(String, Int)]
 zatvori lista br  = filter ((br /=) . fst) lista
-
-
+-}
+-- radi Cugurov nacin
+zatvori :: [(String, Int)] -> String -> [(String, Int)]
+zatvori b br = foldr (\r acc -> if fst r == br then acc else r : acc) [] b 
+    
 
 uplati :: [(String, Int)] -> String -> Int -> [(String, Int)]
-uplati lista br iznos = map (+iznos) (filter ((==br) . fst) lista)
-
-
--- na racun br iz liste b ulati iznos dinara
---uplati:: [(String, Int)] -> String -> Int -> [(String, Int)]
---uplati b br iznos 
-       
-
-
+uplati b br iznos = foldr (\r acc -> if fst r == br then (fst r, snd r + iznos) : acc else r : acc) [] b 
 
 
