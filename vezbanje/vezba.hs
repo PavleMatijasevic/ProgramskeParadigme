@@ -92,6 +92,8 @@ pomnoziListu lista = map(*2) lista
 umanjiListu :: [Int] -> [Int]
 umanjiListu lista = map(\t -> t - 1) lista
 
+
+-- u listu parova
 spojiListe :: [Int] -> [Int] -> [(Int, Int)]
 spojiListe lista1 lista2 = zip lista1 lista2
 
