@@ -15,3 +15,5 @@ proizvodListe([G|R], P):- proizvodListe(R, P1), P is P1 * G.
 ucitaj(N, _):- N<0, !.
 ucitaj(0, []).
 ucitaj(N, [G|R]):- N>=1, write('Unesite element: '), read(G), nl, N1 is N-1, ucitaj(N1, R).
+
+fil
