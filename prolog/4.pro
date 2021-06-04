@@ -123,3 +123,7 @@ maxEl([G|R], X):- maxEl(R, Y), G>= Y, X is G.
 
 
 
+
+
+
+
