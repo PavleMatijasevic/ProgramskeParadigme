@@ -8,6 +8,7 @@ problem.addVariable('jaja', range(4))
 problem.addVariable('mleko', range(6))
 problem.addVariable('visnja', range(3))
 problem.addVariable('nutela', range(3))
+
 def kesice_ogranicenje(b, p, j, m, v, n):
     if b+p+j+m+v+n <= 10:
         return True
