@@ -1,7 +1,11 @@
 import constraint
-
+ 
+       
 problem = constraint.Problem()
+
+
 problem.addVariables("TE",range(1,10))
+
 problem.addVariables("WOIGHLV",range(10))
 
 def o(t, e, w, o, i, g, h, l, v):
@@ -10,7 +14,11 @@ def o(t, e, w, o, i, g, h, l, v):
 
 
 problem.addConstraint(o,"TEWOIGHLV")
+
 problem.addConstraint(constraint.AllDifferentConstraint())
+
+
+
 
 resenja = problem.getSolutions()
 
