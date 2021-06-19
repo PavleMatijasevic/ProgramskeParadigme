@@ -84,6 +84,57 @@ prethodnici lista = map (\a-> a - 1) lista
 sadrzi :: [Int] -> Int -> Bool 
 sadrzi lista a = any (== a) lista
 
+glavaListe :: [Int] -> Int 
+glavaListe (x:xs) = x
+
+repListe :: [Int] -> [Int]
+repListe (x:xs) = xs
+
+
+parniSeg :: Int -> Int -> [Int]
+parniSeg a b = [x | x<-[a..b],  mod x 2 == 0 ]
+
+
+neparniSeg :: Int -> Int -> [Int]
+neparniSeg a b = [x | x<-[a..b], mod x 2 == 1]
+
+parovi :: Int -> Int -> Int -> Int -> [(Int, Int)]
+parovi a b c d = [ (x,y) | x<-[a..b], y<-[c..d]]
+
+zavisnoY :: Int -> Int -> [(Int, Int)]
+zavisnoY a b = [(x, y) | x<-[a..b], y<-[x..b]]
+
+bezbedanRep :: [Int] -> [Int]
+bezbedanRep lista = if lista == [] then [] else tail lista
+
+
+
+zbirPar :: Int -> [(Int, Int)]
+zbirPar n = [(a,b) | a<-[1..n],b<-[1..n], a+b == n]
+
+
+poslednji :: [a] -> a 
+poslednji lista = lista !! pozicija
+      where pozicija = length lista - 1
+
+
+spoji :: [[a]] -> [a]
+spoji [] = []
+spoji lista = [x | podlista<-lista, x<-podlista] 
+
+
+izbaci :: Int -> [Int] -> [Int]
+izbaci k [] = []
+izbaci 0 (x:xs) = xs
+izbaci k (x:xs) = [x] ++ izbaci (k-1) xs
+
+
+
+ubaci :: Int -> Int -> [Int] -> [Int]
+
+ubaci k n [] = []
+ubaci 0 n lista = [n] ++ lista   
+ubaci k n (x:xs) = if k>length (x:xs) then [x]++xs++[n] else  x : ubaci (k-1) n xs
 
 
 
