@@ -1,6 +1,5 @@
 
 import Data.Char
-import Data.List
 
 --radi
 najduza :: [String] -> String
@@ -16,12 +15,15 @@ uvecaj :: String -> String
 uvecaj rec = map toUpper rec
 
 
-razdvoj :: Char -> String -> [String]
-razdvoj sep str = undefined
+-- razdvoj ',' "jedan, dva, tri"
+-- ->        ["jedan", "dva", "tri"]
 
--- jos samo poslednji da se skine separator
+razdvoj :: Char -> String -> [String]
+razdvoj sep rec = undefined
+-- radi
 spoj :: String -> [String] -> String
-spoj _ [] = ""
+spoj sep [] = ""
+spoj sep [x] = x
 spoj sep (x:xs) = x ++ sep ++ spoj sep xs
 
 
