@@ -18,19 +18,6 @@ def ogr1(a,b,d,f):
     else:
         return False
 
-def ogr2(a,c,e,i):
-    if a + c + e + i == 21:
-        return True
-    else:
-        return False
-
-def ogr3(f,g,h,i):
-    if f + g + h + i == 21:
-        return True
-    else:
-        return False
-
-
 
 problem.addConstraint(constraint.AllDifferentConstraint())
 problem.addConstraint(ogr1,"abdf")
