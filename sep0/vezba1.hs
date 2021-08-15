@@ -74,26 +74,51 @@
 --spoj sep [x] = x
 --spoj sep (x:xs) = x ++ sep ++ spoj sep xs
 --
---
---razdvoj :: Char -> String -> [String]
---razdvoj sep "" = []
---
---
-sifruj :: [Int] -> Int -> [Int]
-sifruj [] k = []
-sifruj lista k = prviDeo ++ [kontrolna] ++ sifruj ostatak k
-    where s = take k lista
-          kontrolna = if mod k 2 == 0 then sum s else product s
-          prviDeo = map(\el -> if el > 0 then el + 1 else el - 1) s
-          ostatak = drop (k) lista
 
-desifruj :: [Int] -> Int -> [Int]
-desifruj [] k = []
-desifruj lista k = prviDeo ++ desifruj ostatak k
-    where s = take k lista
-          prviDeo = map(\el-> if el > 0 then el-1 else el+1)s
-          ostatak = drop(k+1) lista
-          
+
+
+
+
+razdvoj ::  Char -> String -> [String]
+razdvoj sep "" = []
+razdvoj sep str = [podniska] ++ razdvoj sep ostatak
+    where s = takeWhile(/=sep) str
+          podniska = take (length(s)) str
+          ostatak = drop (length(s)+1) str
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--sifruj :: [Int] -> Int -> [Int]
+--sifruj [] k = []
+--sifruj lista k = prviDeo ++ [kontrolna] ++ sifruj ostatak k
+--    where s = take k lista
+--          kontrolna = if mod k 2 == 0 then sum s else product s
+--          prviDeo = map(\el -> if el > 0 then el + 1 else el - 1) s
+--          ostatak = drop (k) lista
+--
+--desifruj :: [Int] -> Int -> [Int]
+--desifruj [] k = []
+--desifruj lista k = prviDeo ++ desifruj ostatak k
+--    where s = take k lista
+--          prviDeo = map(\el-> if el > 0 then el-1 else el+1)s
+--          ostatak = drop(k+1) lista
+--          
 
 
 

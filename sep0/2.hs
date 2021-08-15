@@ -69,18 +69,19 @@ najduza (x:xs) = if length x >= length (najduza xs) then x else najduza xs
 umanji :: String -> String
 umanji str = map toLower str
 
-razdvoj :: Char -> String -> [String]
-razdvoj _ "" = [""]
-razdvoj sep str = pre ++ sep ++ razdvoj sep ostatak
-    where pre = takeWhile(/=sep)str
-          ostatak = dropWhile(/=sep)str
-
-
 spoj :: String -> [String] -> String
 spoj _ [] = ""
 spoj sep [x] = x
 spoj sep (x:xs) = x ++ sep ++ spoj sep xs
 
+
+
+razdvoj ::  Char -> String -> [String]
+razdvoj sep "" = []
+razdvoj sep str = [podniska] ++ razdvoj sep ostatak
+    where s = takeWhile(/=sep) str
+          podniska = take (length(s)) str
+          ostatak = drop (length(s)+1) str
 
 
 
