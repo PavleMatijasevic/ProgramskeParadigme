@@ -18,8 +18,15 @@ uvecaj rec = map toUpper rec
 -- razdvoj ',' "jedan, dva, tri"
 -- ->        ["jedan", "dva", "tri"]
 
-razdvoj :: Char -> String -> [String]
-razdvoj sep rec = undefined
+
+razdvoj ::  Char -> String -> [String]
+razdvoj sep "" = []
+razdvoj sep str = [podniska] ++ razdvoj sep ostatak
+    where s = takeWhile(/=sep) str
+          podniska = take (length(s)) str
+          ostatak = drop (length(s)+1) str
+
+
 -- radi
 spoj :: String -> [String] -> String
 spoj sep [] = ""
